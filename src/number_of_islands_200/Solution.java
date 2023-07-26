@@ -31,8 +31,8 @@ public class Solution {
         grid[r][c] = '0';
 
         if (r > 0) removeIsland(r - 1, c);
-        if (r < grid.length) removeIsland(r + 1, c);
+        if (r < grid.length - 1) removeIsland(r + 1, c);
         if (c > 0) removeIsland(r, c - 1);
-        if (c < grid[0].length) removeIsland(r, c + 1);
+        if (c < grid[0].length - 1) removeIsland(r, c + 1);
     }
 }
